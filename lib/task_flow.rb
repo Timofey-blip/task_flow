@@ -4,9 +4,10 @@ require_relative 'task_flow/state'
 require_relative 'task_flow/transition'
 require_relative 'task_flow/definition'
 require_relative 'task_flow/callbacks'
+require_relative 'task_flow/persistent'
 
 module TaskFlow
-  VERSION = '0.1.0'
+  VERSION = '0.3.0'
 
   # DSL для создания workflow
   class << self
