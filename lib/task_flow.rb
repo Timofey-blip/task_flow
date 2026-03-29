@@ -3,6 +3,7 @@
 require_relative 'task_flow/state'
 require_relative 'task_flow/transition'
 require_relative 'task_flow/definition'
+require_relative 'task_flow/callbacks'
 
 module TaskFlow
   VERSION = '0.1.0'
