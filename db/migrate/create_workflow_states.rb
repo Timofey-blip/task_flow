@@ -1,4 +1,4 @@
-# db/migrate/20240327000000_create_workflow_states.rb
+# db/migrate/create_workflow_states.rb
 
 class CreateWorkflowStates < ActiveRecord::Migration[7.0]
   def change
