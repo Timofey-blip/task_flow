@@ -1,5 +1,3 @@
-# lib/task_flow/transition.rb
-
 module TaskFlow
   class Transition
     attr_reader :from, :to, :event

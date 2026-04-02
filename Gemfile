@@ -1,9 +1,2 @@
-# frozen_string_literal: true
-
-source "https://rubygems.org"
-
-# Specify your gem's dependencies in task_flow.gemspec
+source 'https://rubygems.org'
 gemspec
-
-gem "irb"
-gem "rake", "~> 13.0"

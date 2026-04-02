@@ -1,5 +1,3 @@
-# lib/task_flow/state.rb
-
 module TaskFlow
   class State
     attr_reader :name

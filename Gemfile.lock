@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    task_flow (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  task_flow!
+
+BUNDLED WITH
+   2.6.9
