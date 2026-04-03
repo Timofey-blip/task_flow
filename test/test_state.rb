@@ -5,10 +5,8 @@ require_relative 'test_helper'
 describe TaskFlow::State do
   describe '#initialize' do
     it 'создаёт состояние с именем' do
-      # 🔴 RED: Пишем тест (код ещё не работает)
       state = TaskFlow::State.new(:created)
       
-      # 🟢 GREEN: Проверяем что работает
       assert_equal :created, state.name
     end
 
