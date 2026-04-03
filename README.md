@@ -13,10 +13,11 @@ gem 'task_flow', git: 'https://github.com/Timofey-blip/task_flow.git'
 
 ### **3. Как использовать (по шагам)**
 ```markdown
-## Как использовать
 
-### Шаг 1: Опиши процесс
-```ruby
+
+
+---
+### Машина состояний
 require 'task_flow'
 
 flow = TaskFlow.define :order do
@@ -28,14 +29,24 @@ flow = TaskFlow.define :order do
   transition paid: :shipped, event: :ship
 end
 
-создай машину состояний
+
+##создание 
+
 machine = TaskFlow::StateMachine.new(flow)
-выполняй переходы
+
+##выполнение переходов
+
 machine.fire_event(:pay)   # → :paid
 machine.fire_event(:ship)  # → :shipped
 
 puts machine.state  # => :shipped
 
+##описание
+##fire_event(event) - выполнение переходов
+##can_transition?(event) - проверка возможности перехода
+##available_events - доступные события
+##transitions_history - история переходов
+##reset - сброс в начальное состояние
 
 ---
 
